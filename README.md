@@ -11,6 +11,11 @@ I will normally have two keys created at:
 
 the latter of which is my private github account.
 
+DO NOT FORGET to 
+	$ ssh-add ~/.ssh/john_id_rsa
+
+THEN $ ssh-add -l
+
 Modify the ssh config
 ---------------------
 
@@ -39,7 +44,7 @@ Clone you repo and modify the git configuration against the global
 
 Edit the default global git config in the specific directory
 
-	$ git config user.name "stjohnsenekal"
+	$ git config user.name "John Senekal"
 	$ git config user.email "john.senekal@gmail.com" 
 
 

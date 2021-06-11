@@ -12,9 +12,12 @@ I will normally have two keys created at:
 the latter of which is my private github account.
 
 DO NOT FORGET to 
+
 	$ ssh-add ~/.ssh/john_id_rsa
 
-THEN $ ssh-add -l
+Then check with
+
+	$ ssh-add -l
 
 Modify the ssh config
 ---------------------

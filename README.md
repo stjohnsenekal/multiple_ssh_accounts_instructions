@@ -19,6 +19,13 @@ Then check with
 
 	$ ssh-add -l
 
+And check that you are authenticating with the right key by 
+
+	$ ssh -T github.com
+
+or in place of github.com the HostName that is in the ~/.ssh/config file.
+
+
 Modify the ssh config
 ---------------------
 

@@ -63,3 +63,23 @@ then use normal flow to push your code
 	$ git add .
 	$ git commit -m "pertinent comments."
 	$ git push
+
+  Override global git config with the two git config files below
+  ---------------------------------------------
+
+  1. ~/.gitconfig 
+
+    [user] # as default, personal needs
+            email = john.senekal@gmail.com
+            name = John Senekal
+    [includeIf "gitdir:~/SITECAMPAIGN/"] # job needs, like workspace/* so all included projects
+            path = .gitconfig-companyiworkfornow
+
+            # all others section: core, alias, log…
+
+  2. ~/.gitconfig-companyiworkfornow.com 
+    [user]
+        email = jfs@companyiworkfornow.com
+        name = John Senekal
+
+That configuration works quite well.                        
